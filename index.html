@@ -1,0 +1,580 @@
+<html lang="ru">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ЧайЛэнд - Детский развлекательный центр</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="логотип.png" alt="ЧайЛэнд">
+                    <h1>ЧайЛэнд</h1>
+                </div>
+                
+                <div class="header-contact">
+                    <a href="tel:+79271369453" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <span class="phone-text">+7 (927) 136-94-53</span>
+                    </a>
+                    <button id="order-btn" class="btn">Заказать</button>
+                </div>
+                
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#calculator">Калькулятор</a></li>
+                        <li><a href="#birthdays">Дни рождения</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <div class="burger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <h2>Мир детства и веселья!</h2>
+
+                <p>Лучшее место для отдыха и праздников ваших детей</p>
+
+                <a href="#calculator" class="btn">Забронировать сейчас</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <h2>О нашем центре</h2>
+
+            <div class="about-grid">
+
+                <div class="about-item">
+
+                    <i class="fas fa-child"></i>
+
+                    <h3>Безопасность</h3>
+
+                    <p>Все аттракционы сертифицированы и соответствуют стандартам безопасности</p>
+
+                </div>
+
+                <div class="about-item">
+
+                    <i class="fas fa-smile"></i>
+
+                    <h3>Веселье</h3>
+
+                    <p>Более 20 игровых зон и развлечений для детей всех возрастов</p>
+
+                </div>
+
+                <div class="about-item">
+
+                    <i class="fas fa-birthday-cake"></i>
+
+                    <h3>Праздники</h3>
+
+                    <p>Организуем незабываемые дни рождения с профессиональными аниматорами</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="services" class="services">
+
+        <div class="container">
+
+            <h2>Наши услуги</h2>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <img src="https://sun9-35.userapi.com/impg/P4zMgc80pB1NALDpjL4q6XM8ZqlZOODsH4l8Qw/KLdtUyp3OqE.jpg?size=1280x853&quality=95&sign=73521e7823deec79da960178babe8419&type=album" alt="Игровая зона">
+
+                    <h3>Игровая зона</h3>
+
+                    <p>Большая территория с лабиринтами, горками и батутами</p>
+
+                    <span class="price">800 руб./час</span>
+
+                </div>
+
+                <div class="service-card">
+
+                    <img src="https://avatars.mds.yandex.net/i?id=e4a2e450e71e778a2dfad5e30fb1dd13_l-10099509-images-thumbs&n=13" alt="Аниматоры">
+
+                    <h3>Аниматоры</h3>
+
+                    <p>Профессиональные ведущие в костюмах любимых героев</p>
+
+                    <span class="price">1500 руб./час</span>
+
+                </div>
+
+                <div class="service-card">
+
+                    <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/733/125/233/121/513/6/600009628756b4.jpeg" alt="Мастер-классы">
+
+                    <h3>Мастер-классы</h3>
+
+                    <p>Творческие занятия для развития вашего ребенка</p>
+
+                    <span class="price">1000 руб./занятие</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="calculator" class="calculator">
+
+        <div class="container">
+
+            <h2>Калькулятор услуг</h2>
+
+            <p>Выберите нужные услуги и узнайте стоимость посещения</p>
+
+            
+
+            <form id="service-calculator">
+
+                <div class="form-group">
+
+                    <h3>Основные услуги</h3>
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox" name="service" value="800" data-name="Игровая зона (1 час)">
+
+                            Игровая зона (1 час) - 800 руб.
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox" name="service" value="1500" data-name="Аниматор (1 час)">
+
+                            Аниматор (1 час) - 1500 руб.
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox" name="service" value="1000" data-name="Мастер-класс">
+
+                            Мастер-класс - 1000 руб.
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="form-group">
+
+                    <h3>Дополнительные услуги</h3>
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox" name="extra" value="500" data-name="Фотосессия">
+
+                            Фотосессия - 500 руб.
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox" name="extra" value="300" data-name="Аквагрим">
+
+                            Аквагрим - 300 руб.
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox" name="extra" value="700" data-name="Тематический костюм">
+
+                            Тематический костюм - 700 руб.
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="form-group">
+
+                    <label for="children">Количество детей:</label>
+
+                    <input type="number" id="children" name="children" min="1" max="10" value="1">
+
+                </div>
+
+                
+
+                <div class="total">
+
+                    <h3>Итого к оплате:</h3>
+
+                    <div id="selected-services"></div>
+
+                    <div class="total-amount">0 руб.</div>
+
+                </div>
+
+                
+
+                <button type="button" id="pay-btn" class="btn">Перейти к оплате</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section id="birthdays" class="birthdays">
+
+        <div class="container">
+
+            <h2>Организация дней рождения</h2>
+
+            <div class="birthday-content">
+
+                <div class="birthday-info">
+
+                    <h3>Создайте незабываемый праздник!</h3>
+
+                    <p>Мы предлагаем полный пакет услуг для организации идеального дня рождения вашего ребенка:</p>
+
+                    <ul>
+
+                        <li>Тематическое оформление зала</li>
+
+                        <li>Профессиональные аниматоры</li>
+
+                        <li>Развлекательная программа</li>
+
+                        <li>Праздничный торт и угощения</li>
+
+                        <li>Фотосессия и памятные подарки</li>
+
+                    </ul>
+
+                    <a href="#calculator" class="btn">Заказать праздник</a>
+
+                </div>
+
+                <div class="birthday-image">
+
+                    <img src="https://i.1.creatium.io/7c/a6/e2/1898073ebf7ef596bf04e809794108efb8/interaktivniy_prazdnichniy_stol.jpg" alt="День рождения">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="reviews" class="reviews">
+
+        <div class="container">
+
+            <h2>Отзывы наших гостей</h2>
+
+            <div class="reviews-slider">
+
+                <div class="review">
+
+                    <div class="review-header">
+
+                        <img src="https://cdn1.flamp.ru/eb7027716b4199eb5d8c8d1a52a73566.jpg" alt="Ольга">
+
+                        <div>
+
+                            <h4>Ольга</h4>
+
+                            <div class="stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p>"Отмечали день рождения дочки в ЧайЛэнде. Все было организовано на высшем уровне! Дети в восторге, аниматоры просто волшебные. Обязательно вернемся снова!"</p>
+
+                </div>
+
+                <div class="review">
+
+                    <div class="review-header">
+
+                        <img src="https://photo6.wambacdn.net/88/28/00/1771008288/2148591821_huge.jpg?hash=mDOOowGO3YGsSyTyhNA87w&expires=64060578000&updated=1682410024" alt="Иван">
+
+                        <div>
+
+                            <h4>Иван</h4>
+
+                            <div class="stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star-half-alt"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p>"Регулярно посещаем ЧайЛэнд с сыном. Чисто, безопасно, персонал внимательный. Особенно нравится система онлайн-бронирования - очень удобно!"</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   <section id="contacts" class="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <div class="contacts-grid">
+            <div class="contact-info">
+                <h3>Как нас найти</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Вольский тракт, 2/1, Саратов (этаж 2)</p>
+                <p><i class="fas fa-phone"></i> +7 (927) 136-94-53</p>
+                <p><i class="fas fa-envelope"></i> info@chailand.ru</p>
+                <p><i class="fas fa-clock"></i> Ежедневно с 10:00 до 20:00</p>
+                <div class="social">
+                    <a href="https://vk.com/chailandsaratov" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a href="https://web.telegram.org/a/#-1001790965859" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="map">
+                <div id="main-map" style="width: 100%; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+        </div>
+
+    </ion>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-logo">
+
+                    <img src="https://sun9-4.userapi.com/impg/TUbOr1t1U9wHk-MAYr63B3IbOzttDjxrryH2yQ/IK3M9xUBWOQ.jpg?size=960x540&quality=95&sign=9c763193b07f2757ca0ae1494e43d794&type=album" alt="ЧайЛэнд">
+
+                    <h3>ЧайЛэнд</h3>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <ul>
+
+                        <li><a href="#home">Главная</a></li>
+
+                        <li><a href="#about">О нас</a></li>
+
+                        <li><a href="#services">Услуги</a></li>
+
+                        <li><a href="#calculator">Калькулятор</a></li>
+
+                        <li><a href="#birthdays">Дни рождения</a></li>
+
+                        <li><a href="#reviews">Отзывы</a></li>
+
+                        <li><a href="#contacts">Контакты</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-legal">
+
+                    <p>© 2025 ЧайЛэнд. Все права защищены.</p>
+                    <div class="footer-links">
+                        <a href="ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ.docx" download>Политика конфиденциальности</a>
+                        <a href="ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ.docx" download>Пользовательское соглашение</a>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div id="payment-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Оплата услуг</h2>
+
+            <div id="payment-details"></div>
+
+            <div class="payment-form">
+
+                <h3>Введите данные карты</h3>
+
+                <form id="card-form">
+
+                    <div class="form-group">
+
+                        <label for="card-number">Номер карты</label>
+
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="card-expiry">Срок действия</label>
+
+                            <input type="text" id="card-expiry" placeholder="ММ/ГГ">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="card-cvc">CVC/CVV</label>
+
+                            <input type="text" id="card-cvc" placeholder="123">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="card-name">Имя владельца</label>
+
+                        <input type="text" id="card-name" placeholder="IVAN IVANOV">
+
+                    </div>
+
+                    <button type="submit" class="btn">Оплатить</button>
+
+                </form>
+
+                <div class="payment-methods">
+
+                    <img src="сбп.jpg" alt="Система быстрых переводов">
+
+                    
+
+                    <img src="мир.jpg" alt="Мир">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Заказ праздника</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="order-name">Ваше имя:</label>
+                    <input type="text" id="order-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="order-phone">Номер телефона:</label>
+                    <input type="tel" id="order-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="order-date">Дата праздника:</label>
+                    <input type="date" id="order-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="order-comments">Пожелания:</label>
+                    <textarea id="order-comments"></textarea>
+                </div>
+                <div id="order-map" style="height: 300px; margin-bottom: 20px;"></div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
